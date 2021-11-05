@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { JobFileModule } from './job-file/job-file.module';
+import { JobFileModule } from './modules';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
 import configuration from './config/configuration';
