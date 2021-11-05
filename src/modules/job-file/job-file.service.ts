@@ -20,7 +20,7 @@ export class JobFileService {
     return this.jobFileModel.find();
   }
 
-  update(updateJobFileInput: UpdateJobFileInput) {
-    // return this.jobFileModel.updateOne()
+  async findByJobRefId(jobRefId: string) {
+    return this.jobFileModel.findById(jobRefId);
   }
 }

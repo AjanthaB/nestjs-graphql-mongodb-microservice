@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { CreateJobFileInput } from './dto/create-job-file.input';
 import { JobFileService } from './job-file.service';
 
@@ -14,5 +14,10 @@ export class JobFileController {
   @Get('')
   getAll() {
     return this.jobFileService.findAll();
+  }
+
+  @Get(':id')
+  getByJobRefId(@Param() jobRefId: string) {
+    return this.jobFileService.findByJobRefId(jobRefId);
   }
 }
