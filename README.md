@@ -1,3 +1,7 @@
+# Nestjs, graphql, mongodb Microservice
+
+This is a example of graphql microservice which implemented on nestjs using mongodb as Database.
+
 ## Installation
 
 ```bash
